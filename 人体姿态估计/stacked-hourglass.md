@@ -18,6 +18,7 @@
 Stacked Hourglass模型发表于2016年，据（知乎）说在提出时是强过了当时所有的模型，而且比排名第二的CPM在设计上更清晰，模型更简洁（但还是很大啊...）。
 ## 实践
 [ github pytorch版本参考 ] :https://github.com/bearpaw/pytorch-pose
+
 实践尚在进行，先写个GitHub链接。粗看了下，挺不错的，但作者说是没在python3上测试过，有待考究。
 
 未完待续。。。
