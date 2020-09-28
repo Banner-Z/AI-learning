@@ -19,6 +19,12 @@ Stacked Hourglass模型发表于2016年，据（知乎）说在提出时是强�
 ## 实践
 [ github pytorch版本参考 ] :https://github.com/bearpaw/pytorch-pose
 
-实践尚在进行，先写个GitHub链接。粗看了下，挺不错的，但作者说是没在python3上测试过，有待考究。
+作者说是没在python3上测试过，有待考究。
+
+搬运步骤：下载GitHub项目->下载数据集到对应的文件夹下（的image文件夹内）：mpii数据集很大，而且需要梯子。
+
+->使用ln命令指定数据集位置（相当于为某一个文件在另外一个位置建立一个同步的链接）->
+
+直接调main.py进行训练：可以在原有模型上继续。 或 在experiments下也有对应的.sh文件可以启动main.py。
 
 未完待续。。。
