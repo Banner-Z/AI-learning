@@ -27,4 +27,16 @@ Stacked Hourglass模型发表于2016年，据（知乎）说在提出时是强�
 
 直接调main.py进行训练：可以在原有模型上继续。 或 在experiments下也有对应的.sh文件可以启动main.py。
 
+原代码可能出现的问题：
+
+1.Bar类所在的文件夹progress需要从另一个链接的GitHub仓库里下载，放在原有的progress内。
+
+2.model_zoo不在torchvision.models.resnet下，原文件中某处使用了这个位置调用model_zoo，这显然有问题。将model_zoo导入的路径更改为torch.utils即可（因为model_url会指定所选的model，不需担心模型对应问题）。
+
+3.在transform中进行rotate调用时给angle了一个torch类型的参数，应该用.item()转换到double类型。
+
+4.还有一些库版本不一致造成的问题，比如函数或类不在对应包位置上。
+
+5.原GitHub中似乎只介绍了直接调用main文件开始训练的方法，其实更合理的方式应该为使用experiment中的sh文件。
+
 未完待续。。。
